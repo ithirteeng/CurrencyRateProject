@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/cashFragment">
+    <fragment
+        android:id="@+id/cashFragment"
+        android:name="com.example.currencyrateproject.view.main_activity.cash_fragment.CashFragment"
+        android:label="fragment_cash"
+        tools:layout="@layout/fragment_cash" >
+        <action
+            android:id="@+id/action_cashFragment_to_cashlessFragment2"
+            app:destination="@id/cashlessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cashlessFragment"
+        android:name="com.example.currencyrateproject.view.main_activity.cashless_fragment.CashlessFragment"
+        android:label="fragment_cashless"
+        tools:layout="@layout/fragment_cashless" >
+        <action
+            android:id="@+id/action_cashlessFragment_to_cashFragment2"
+            app:destination="@id/cashFragment" />
+    </fragment>
+</navigation>

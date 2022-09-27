@@ -1,4 +1,4 @@
-package com.example.currencyrateproject.view.main_activity.cash_frgament
+package com.example.currencyrateproject.view.main_activity.cash_fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

@@ -1,8 +1,7 @@
-package com.example.currencyrateproject.view.spalsh_activity
+package com.example.currencyrateproject.view.splash_activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.currencyrateproject.R
 import com.example.currencyrateproject.databinding.ActivitySplashBinding
 
 class SplashActivity : AppCompatActivity() {
