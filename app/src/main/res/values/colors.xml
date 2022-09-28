@@ -9,9 +9,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#353535</color>
 
-    <color name="sell_color">#680333</color>
-    <color name="currency_name_color">#255700</color>
+    <color name="sell_color">#D6D6D6</color>
+    <color name="currency_name_color">#D6D6D6</color>
     <color name="purchase_color">#730222</color>
-    <color name="card_color">#AEB1B1</color>
-    <color name="background_color">#FAFAFA</color>
+    <color name="card_color">#3575A1</color>
+    <color name="background_color">#353535</color>
+    <color name="tab_tint_color">#C1000000</color>
+
 </resources>
