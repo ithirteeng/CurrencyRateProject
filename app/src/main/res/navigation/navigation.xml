@@ -15,9 +15,9 @@
     </fragment>
     <fragment
         android:id="@+id/cashlessFragment"
-        android:name="com.example.currencyrateproject.view.main_activity.cashless_fragment.CashlessFragment"
+        android:name="com.example.currencyrateproject.view.main_activity.cashless_fragment.QueryFragment"
         android:label="fragment_cashless"
-        tools:layout="@layout/fragment_cashless" >
+        tools:layout="@layout/fragment_query" >
         <action
             android:id="@+id/action_cashlessFragment_to_cashFragment2"
             app:destination="@id/cashFragment" />
