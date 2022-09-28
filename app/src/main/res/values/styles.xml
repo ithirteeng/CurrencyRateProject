@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <style name="item_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/items_text_padding</item>
+        <item name="android:textSize">@dimen/items_text_size</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+    </style>
+</resources>

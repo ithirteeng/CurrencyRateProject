@@ -8,4 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#353535</color>
+
+    <color name="sell_color">#240057</color>
+    <color name="currency_name_color">#255700</color>
+    <color name="purchase_color">#730222</color>
+    <color name="card_color">#AEB1B1</color>
+    <color name="background_color">#FAFAFA</color>
 </resources>

@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Currency Rate</string>
     <string name="content_description">content description</string>
+    <string name="item_name_text">Название:</string>
+    <string name="item_purchase_text">Закупка:</string>
+    <string name="item_sell_text">Продажа:</string>
 </resources>

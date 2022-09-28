@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="splash_logo_margin">50dp</dimen>
+
+    <dimen name="linear_layouts_margin">20dp</dimen>
+
+    <dimen name="items_text_padding">6dp</dimen>
+    <dimen name="items_text_size">17sp</dimen>
+    <dimen name="item_bottom_padding">10dp</dimen>
 </resources>
