@@ -12,8 +12,9 @@
     <color name="sell_color">#D6D6D6</color>
     <color name="currency_name_color">#D6D6D6</color>
     <color name="purchase_color">#730222</color>
-    <color name="card_color">#3575A1</color>
+    <color name="card_color">#D6D6D6</color>
     <color name="background_color">#353535</color>
     <color name="tab_tint_color">#C1000000</color>
+    <color name="border_color">#353535</color>
 
 </resources>

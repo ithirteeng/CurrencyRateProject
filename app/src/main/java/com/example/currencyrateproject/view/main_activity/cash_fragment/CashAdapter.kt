@@ -15,7 +15,7 @@ class CashAdapter : RecyclerView.Adapter<CashAdapter.CashViewHolder>() {
 
         fun bind(item: Item) {
             binding.currencyNameTextView.text = item.name
-            binding.priceTextView.text = item.sellPrice.toString()
+            binding.priceTextView.text = String.format("%.4f", item.sellPrice)
         }
     }
 
@@ -36,10 +36,6 @@ class CashAdapter : RecyclerView.Adapter<CashAdapter.CashViewHolder>() {
 
     override fun getItemCount(): Int {
         return itemList.size
-    }
-
-    fun getList(): List<Item> {
-        return itemList
     }
 
     fun setList(list: ArrayList<Item>) {

@@ -1,6 +1,5 @@
 package com.example.currencyrateproject.view.main_activity.cash_fragment
 
-import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -35,7 +34,7 @@ class CashFragmentViewModel : ViewModel() {
             currentItemList.add(translateValuteToItem(valute))
         }
         itemList.value = currentItemList
-        Log.d("SSTAG", "SSDsd")
+
     }
 
     private suspend fun getValuteList(): ArrayList<Valute> {

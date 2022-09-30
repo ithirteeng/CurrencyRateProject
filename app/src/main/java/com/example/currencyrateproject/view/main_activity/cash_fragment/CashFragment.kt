@@ -33,11 +33,7 @@ class CashFragment : Fragment() {
             val cashAdapter = CashAdapter()
             cashAdapter.setList(list as ArrayList<Item>)
             recyclerView.adapter = cashAdapter
-//            for (item in list) {
-//                binding.textView.append("${item.name}: ${item.sellPrice} \n")
-//            }
         }
-
 
         return mainView
     }

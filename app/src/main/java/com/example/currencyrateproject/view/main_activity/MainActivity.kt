@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding.viewPager.adapter = MainViewPagerAdapter(this)
-        binding.tabLayout.tabIconTint = null
         TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->
             run {
                 when (position) {
