@@ -1,5 +1,6 @@
 package com.example.currencyrateproject.view.main_activity.cash_fragment
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -21,28 +22,30 @@ class CashFragmentViewModel : ViewModel() {
     private val itemList = MutableLiveData<List<Item>>()
 
     fun getLiveData(): MutableLiveData<List<Item>> {
+        viewModelScope.launch {
+            createItemList()
+        }
         return itemList
     }
 
-    fun createItemList() {
+    private suspend fun createItemList() {
         val currentValuteList = getValuteList()
         val currentItemList = mutableListOf<Item>()
         for (valute in currentValuteList) {
             currentItemList.add(translateValuteToItem(valute))
         }
         itemList.value = currentItemList
+        Log.d("SSTAG", "SSDsd")
     }
 
-    private fun getValuteList(): List<Valute> {
-        var valuteList = listOf<Valute>()
-        viewModelScope.launch {
-           valuteList = getDataUseCase.execute()
-        }
-        return valuteList
+    private suspend fun getValuteList(): ArrayList<Valute> {
+        return getDataUseCase.execute()
     }
+
+
 
     private fun translateValuteToItem(valute: Valute): Item {
-        return Item(valute.charCode, valute.value / valute.nominal)
+        return Item(valute.charCode, 234.0)
     }
 
 }

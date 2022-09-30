@@ -19,7 +19,7 @@ class CashAdapter : RecyclerView.Adapter<CashAdapter.CashViewHolder>() {
         }
     }
 
-    private var itemList = emptyList<Item>()
+    private var itemList = listOf<Item>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CashViewHolder {
         val view = LayoutInflater
@@ -38,7 +38,7 @@ class CashAdapter : RecyclerView.Adapter<CashAdapter.CashViewHolder>() {
         return itemList.size
     }
 
-    fun setList(list: List<Item>) {
-        itemList = list
+    fun setList(list: ArrayList<Item>) {
+        itemList = list.toList()
     }
 }

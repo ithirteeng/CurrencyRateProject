@@ -1,6 +1,7 @@
 package com.example.currencyrateproject.view.main_activity.cash_fragment
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.example.currencyrateproject.R
 import com.example.currencyrateproject.databinding.FragmentCashBinding
+import com.example.currencyrateproject.view.model.Item
 
 class CashFragment : Fragment() {
 
@@ -30,13 +32,13 @@ class CashFragment : Fragment() {
         adapter = CashAdapter()
 
         recyclerView.adapter = adapter
-        viewModel.createItemList()
 
-        viewModel.getLiveData().observe(viewLifecycleOwner) { list ->
-            adapter.setList(list)
+        val liveData = viewModel.getLiveData()
+
+        liveData.observe(viewLifecycleOwner) { list ->
+            adapter.setList(list as ArrayList<Item>)
         }
-
-
+        Log.d("SSTAG", liveData.value.toString())
         return view
     }
 
