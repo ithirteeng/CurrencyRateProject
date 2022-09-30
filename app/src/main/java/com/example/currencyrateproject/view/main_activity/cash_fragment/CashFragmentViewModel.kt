@@ -43,9 +43,12 @@ class CashFragmentViewModel : ViewModel() {
     }
 
 
-
     private fun translateValuteToItem(valute: Valute): Item {
-        return Item(valute.charCode, 234.0)
+        val quantity = valute.nominal.toDouble()
+        val valueString = valute.value.replace(",", ".")
+        val value = valueString.toDouble()
+        val result = value / quantity
+        return Item(valute.name, result)
     }
 
 }

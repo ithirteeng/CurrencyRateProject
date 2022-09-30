@@ -38,6 +38,10 @@ class CashAdapter : RecyclerView.Adapter<CashAdapter.CashViewHolder>() {
         return itemList.size
     }
 
+    fun getList(): List<Item> {
+        return itemList
+    }
+
     fun setList(list: ArrayList<Item>) {
         itemList = list.toList()
     }
