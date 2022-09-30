@@ -1,4 +1,4 @@
-package com.example.currencyrateproject.view.main_activity.cash_fragment
+package com.example.currencyrateproject.presentation.main_activity.cash_fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.currencyrateproject.R
 import com.example.currencyrateproject.databinding.FragmentCashBinding
-import com.example.currencyrateproject.view.model.Item
+import com.example.currencyrateproject.presentation.model.Item
 
 class CashFragment : Fragment() {
 

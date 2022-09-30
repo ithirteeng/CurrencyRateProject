@@ -1,4 +1,4 @@
-package com.example.currencyrateproject.view.main_activity.cash_fragment
+package com.example.currencyrateproject.presentation.main_activity.cash_fragment
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.currencyrateproject.R
 import com.example.currencyrateproject.databinding.ItemExchangeLayoutBinding
-import com.example.currencyrateproject.view.model.Item
+import com.example.currencyrateproject.presentation.model.Item
 
 class CashAdapter : RecyclerView.Adapter<CashAdapter.CashViewHolder>() {
 
@@ -14,7 +14,7 @@ class CashAdapter : RecyclerView.Adapter<CashAdapter.CashViewHolder>() {
         private val binding = ItemExchangeLayoutBinding.bind(view)
 
         fun bind(item: Item) {
-            binding.currencyNameTextView.text = item.name
+            binding.currencyNameTextView.text = item.fullName
             binding.priceTextView.text = String.format("%.4f", item.sellPrice)
         }
     }

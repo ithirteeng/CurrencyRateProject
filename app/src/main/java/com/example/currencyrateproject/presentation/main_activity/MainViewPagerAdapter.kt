@@ -1,10 +1,10 @@
-package com.example.currencyrateproject.view.main_activity
+package com.example.currencyrateproject.presentation.main_activity
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.currencyrateproject.view.main_activity.cash_fragment.CashFragment
-import com.example.currencyrateproject.view.main_activity.cashless_fragment.QueryFragment
+import com.example.currencyrateproject.presentation.main_activity.cash_fragment.CashFragment
+import com.example.currencyrateproject.presentation.main_activity.query_fragment.QueryFragment
 
 class MainViewPagerAdapter(fragmentActivity: FragmentActivity): FragmentStateAdapter(fragmentActivity) {
     override fun getItemCount(): Int {

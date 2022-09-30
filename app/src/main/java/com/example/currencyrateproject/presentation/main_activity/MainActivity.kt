@@ -1,4 +1,4 @@
-package com.example.currencyrateproject.view.main_activity
+package com.example.currencyrateproject.presentation.main_activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

@@ -1,4 +1,4 @@
-package com.example.currencyrateproject.view.main_activity.cash_fragment
+package com.example.currencyrateproject.presentation.main_activity.cash_fragment
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -6,7 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.currencyrateproject.data.repository.CurrencyRepositoryImpl
 import com.example.currencyrateproject.domain.model.Valute
 import com.example.currencyrateproject.domain.use_case.GetDataUseCase
-import com.example.currencyrateproject.view.model.Item
+import com.example.currencyrateproject.presentation.model.Item
 import kotlinx.coroutines.launch
 
 class CashFragmentViewModel : ViewModel() {
@@ -47,7 +47,7 @@ class CashFragmentViewModel : ViewModel() {
         val valueString = valute.value.replace(",", ".")
         val value = valueString.toDouble()
         val result = value / quantity
-        return Item(valute.name, result)
+        return Item(valute.name, valute.charCode, result)
     }
 
 }

@@ -1,11 +1,11 @@
-package com.example.currencyrateproject.view.splash_activity
+package com.example.currencyrateproject.presentation.splash_activity
 
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.currencyrateproject.databinding.ActivitySplashBinding
-import com.example.currencyrateproject.view.main_activity.MainActivity
+import com.example.currencyrateproject.presentation.main_activity.MainActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay

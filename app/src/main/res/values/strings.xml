@@ -6,4 +6,5 @@
     <string name="default_card_text">not found</string>
     <string name="cash_tab_text">CASH</string>
     <string name="query_tab_cash">QUERY</string>
+    <string name="find_button_text">find</string>
 </resources>

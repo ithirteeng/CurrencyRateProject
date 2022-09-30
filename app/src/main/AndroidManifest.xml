@@ -16,7 +16,7 @@
         android:theme="@style/Theme.CurrencyRateProject"
         tools:targetApi="31">
         <activity
-            android:name=".view.splash_activity.SplashActivity"
+            android:name=".presentation.splash_activity.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view.main_activity.MainActivity"
+            android:name=".presentation.main_activity.MainActivity"
             android:exported="false" />
     </application>
 

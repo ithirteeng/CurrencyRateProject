@@ -6,7 +6,7 @@
     app:startDestination="@id/cashFragment">
     <fragment
         android:id="@+id/cashFragment"
-        android:name="com.example.currencyrateproject.view.main_activity.cash_fragment.CashFragment"
+        android:name="com.example.currencyrateproject.presentation.main_activity.cash_fragment.CashFragment"
         android:label="fragment_cash"
         tools:layout="@layout/fragment_cash" >
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/cashlessFragment"
-        android:name="com.example.currencyrateproject.view.main_activity.cashless_fragment.QueryFragment"
+        android:name="com.example.currencyrateproject.presentation.main_activity.query_fragment.QueryFragment"
         android:label="fragment_cashless"
         tools:layout="@layout/fragment_query" >
         <action

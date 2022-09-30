@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.main_activity.MainActivity">
+    tools:context=".presentation.main_activity.MainActivity">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager"
@@ -36,7 +36,7 @@
         app:tabIndicatorGravity="stretch"
         app:tabIndicatorColor="@color/sell_color"
         tools:ignore="SpeakableTextPresentCheck"
-        app:tabIconTint="@color/tab_tint_color"
+        app:tabIconTint="@color/black"
         app:tabRippleColor="@null">
 
         <com.google.android.material.tabs.TabItem
