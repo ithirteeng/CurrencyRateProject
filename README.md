@@ -1,7 +1,7 @@
 # CurrencyRateProject
 *Pet project*<br/>
 
-It's an application, where you can мшуц currency exchanging rates relative to Ruble.<br/>
+It's an application, where you can view currency exchanging rates relative to Ruble.<br/>
 The purpose of creating this application was learning how to work with API.
 
 ## Technology stack:
@@ -9,6 +9,7 @@ The purpose of creating this application was learning how to work with API.
 - Kotlin coroutines
 - RecyclerView
 - MVVM
+- Clean Architecture
 - SimpleXmlConverter
 
 ## Screenshots:
