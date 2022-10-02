@@ -10,6 +10,7 @@ The purpose of creating this application was learning how to work with API.
 - RecyclerView
 - MVVM
 - Clean Architecture
+- Android ViewModel
 - SimpleXmlConverter
 
 ## Screenshots:
